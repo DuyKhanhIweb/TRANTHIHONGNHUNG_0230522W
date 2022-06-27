@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SFUSalzburgMedium';
+    src: url('fonts/SFUSalzburgMedium.eot');
+    src: url('fonts/SFUSalzburgMedium.eot') format('embedded-opentype'),
+         url('fonts/SFUSalzburgMedium.woff2') format('woff2'),
+         url('fonts/SFUSalzburgMedium.woff') format('woff'),
+         url('fonts/SFUSalzburgMedium.ttf') format('truetype'),
+         url('fonts/SFUSalzburgMedium.svg#SFUSalzburgMedium') format('svg');
+}

@@ -1,0 +1,441 @@
+@charset "UTF-8";
+/*Global*/
+/*End global*/
+/*Header*/
+.menu-search__wrapper {
+  border: 1px solid #000;
+  padding: 0.4rem 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24rem;
+}
+
+.menu-search__wrapper input {
+  height: 3rem;
+  padding-left: 1rem;
+  color: #797979;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+  outline: none;
+  background: transparent;
+  border: 0;
+  border-right: 1px solid #000;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menu-search__wrapper input::-webkit-input-placeholder {
+  color: #797979;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+}
+
+.menu-search__wrapper input:-ms-input-placeholder {
+  color: #797979;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+}
+
+.menu-search__wrapper input::-ms-input-placeholder {
+  color: #797979;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+}
+
+.menu-search__wrapper input::placeholder {
+  color: #797979;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+}
+
+.menu-search__wrapper button {
+  padding: 0 1rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-search__wrapper button:hover > i {
+  color: var(--html-cl-website);
+}
+
+.cart-header__wrapper {
+  cursor: pointer;
+}
+
+.cart-header__wrapper-icon {
+  color: #000;
+  display: block;
+  font-size: 2.4rem;
+}
+
+.cart-header__wrapper-quantity {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 2.3rem;
+  height: 2.3rem;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #ff0000;
+  border: 1px solid var(--html-cl-website);
+  font-size: 1.4rem;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+/*End*/
+/*Sản phẩm bán chạy*/
+.wrapper-selling {
+  padding: 5rem 0;
+}
+
+.wrapper-title__index {
+  text-align: center;
+}
+
+.wrapper-title__index.wrapper-title__index-list span::before {
+  display: none;
+}
+
+.wrapper-title__index.wrapper-title__index--fb a {
+  text-align: left;
+}
+
+.wrapper-title__index a {
+  display: block;
+  text-align: center;
+}
+
+.wrapper-title__index a span {
+  display: inline-block;
+  color: #000;
+  position: relative;
+  font-family: var(--utmavo-bold), Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+}
+
+.wrapper-title__index a span::before {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 16.8rem;
+  height: 0.1rem;
+  background: #000;
+}
+
+/* End bán chạy */
+/*Khung sản phẩm*/
+.wrapper-products {
+  margin-bottom: 4rem;
+}
+
+.wrapper-products__box {
+  border: 1px solid #ccc;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.wrapper-products__box::before, .wrapper-products__box::after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--html-cl-website);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  z-index: 1;
+}
+
+.wrapper-products__box::before {
+  bottom: 0;
+  left: 0;
+}
+
+.wrapper-products__box::after {
+  top: 0;
+  right: 0;
+}
+
+.wrapper-products__box-outline::before, .wrapper-products__box-outline::after {
+  content: " ";
+  position: absolute;
+  height: 0;
+  width: 2px;
+  background-color: var(--html-cl-website);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  z-index: 1;
+}
+
+.wrapper-products__box-outline::before {
+  right: 0;
+  bottom: 0;
+}
+
+.wrapper-products__box-outline::after {
+  left: 0;
+  top: 0;
+}
+
+.wrapper-products__box:hover::before, .wrapper-products__box:hover::after {
+  width: 100%;
+}
+
+.wrapper-products__box:hover .wrapper-products__box-outline::before, .wrapper-products__box:hover .wrapper-products__box-outline::after {
+  height: 100%;
+}
+
+.wrapper-products__box:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+.wrapper-products__box:hover .sup-img {
+  visibility: visible;
+  opacity: 1;
+}
+
+.wrapper-products__box-img a img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.wrapper-products__box-detail-aside {
+  padding: 1rem;
+}
+
+.wrapper-products__box-detail-content {
+  border-top: 1px solid #ccc;
+}
+
+.wrapper-products__box-detail-content-price {
+  font-size: 1.6rem;
+  color: #ff0000;
+  display: block;
+  text-align: center;
+  padding: 1.3rem 0;
+  border-right: 1px solid #ccc;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+}
+
+.wrapper-products__box-detail-content-buynow {
+  font-size: 1.6rem;
+  background: var(--html-bg-website);
+  color: #fff;
+  text-align: center;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper-products__box-detail-title {
+  line-height: 2rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.wrapper-products__box-detail-title > a {
+  font-size: 1.6rem;
+  color: #000;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.wrapper-products__box-detail-title > a:hover {
+  color: var(--html-bg-website);
+}
+
+/*Đăng ký tư vấn*/
+.wrapper-evaluate {
+  padding: 5rem 0;
+}
+
+.wrapper-evaluate .wrapper-evaluate__feedbacks {
+  position: relative;
+  padding: 1rem;
+  background: #fff;
+}
+
+.wrapper-evaluate .wrapper-evaluate__feedbacks-avatar > span > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1.66181;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.wrapper-evaluate .wrapper-evaluate__feedbacks-detail {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.wrapper-evaluate .wrapper-evaluate__feedbacks-detail-name {
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: var(--utmavo-bold), Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.wrapper-evaluate__form {
+  padding: 0 7rem;
+}
+
+.wrapper-evaluate__form-row {
+  margin-bottom: 1.3rem;
+}
+
+.wrapper-evaluate__form-row input {
+  width: 100%;
+  padding-left: 2rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+  height: 5rem;
+  outline: none;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 5rem;
+  border-radius: 0.5rem;
+}
+
+.wrapper-evaluate__form-row input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.wrapper-evaluate__form-row input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.wrapper-evaluate__form-row input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.wrapper-evaluate__form-row input::placeholder {
+  color: #fff;
+}
+
+.wrapper-evaluate__form-row textarea {
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+  outline: none;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+
+.wrapper-evaluate__form-row textarea::-webkit-input-placeholder {
+  color: #fff;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+}
+
+.wrapper-evaluate__form-row textarea:-ms-input-placeholder {
+  color: #fff;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+}
+
+.wrapper-evaluate__form-row textarea::-ms-input-placeholder {
+  color: #fff;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+}
+
+.wrapper-evaluate__form-row textarea::placeholder {
+  color: #fff;
+  font-family: var(--utmavo-normal), Arial, Helvetica, sans-serif;
+}
+
+.wrapper-evaluate__form-btn {
+  text-align: center;
+}
+
+.wrapper-evaluate__form-btn button {
+  min-width: 11.5rem;
+  height: 4.7rem;
+  background: #fff;
+  text-align: center;
+  line-height: 4.7rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #000;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  text-transform: none;
+}
+
+/*End đăng ký tư vấn*/
+/*Tin tức*/
+.wrapper-layouts {
+  padding: 5rem 0;
+}
+
+.wrapper-layouts .wrapper-layouts-newsleft__box-detail {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.wrapper-layouts .wrapper-layouts-newsleft__box-detail-title {
+  line-height: 2.2rem;
+}
+
+.wrapper-layouts .wrapper-layouts-newsleft__box-detail-title a {
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: var(--utmavo-bold), Arial, Helvetica, sans-serif;
+}
+
+/*End tin tức*/
+/*End*/
+/*# sourceMappingURL=base.css.map */

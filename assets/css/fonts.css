@@ -1,0 +1,112 @@
+@font-face {
+
+    font-family: 'montserratRegular';
+
+    src: url('../../../images/fonts/Montserrat-Regular.eot');
+
+    src: url('../../../images/fonts/Montserrat-Regular.eot') format('embedded-opentype'), url('../../../images/fonts/Montserrat-Regular.ttf') format('truetype'), url('../../../images/fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+
+}
+
+@font-face {
+
+    font-family: 'montserratBold';
+
+    src: url('../../../images/fonts/Montserrat-Bold.eot');
+
+    src: url('../../../images/fonts/Montserrat-Bold.eot') format('embedded-opentype'), url('../../../images/fonts/Montserrat-Bold.ttf') format('truetype'), url('../../../images/fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+
+}
+
+@font-face {
+
+    font-family: 'Impact';
+
+    src: url('../../../images/fonts/impact.ttf');
+
+}
+
+@font-face {
+
+    font-family: 'UTMA';
+
+    src: url('../../../images/fonts/UTM Ambrose.ttf') format('truetype');
+
+}
+
+@font-face {
+
+    font-family: 'muli';
+
+    src: url('../../../images/fonts/Mulish-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+
+    font-family: 'muli-bold';
+
+    src: url('../../../images/fonts/muli/Muli-Bold.ttf') format('truetype');
+
+}
+
+@font-face {
+
+    font-family: 'UTMBC';
+
+    src: url('../../../images/fonts/UTM Beautiful Caps.ttf');
+
+}
+
+@font-face {
+
+    font-family: 'RobotoRegular';
+
+    src: url('../../../images/fonts/RobotoRegular.eot');
+
+    src: url('../../../images/fonts/RobotoRegular.eot') format('embedded-opentype'), url('../../../images/fonts/RobotoRegular.woff2') format('woff2'), url('../../../images/fonts/RobotoRegular.woff') format('woff'), url('../../../images/fonts/RobotoRegular.ttf') format('truetype'), url('../../../images/fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+
+}
+
+
+
+@font-face {
+
+    font-family: 'RobotoBold';
+
+    src: url('../../../images/fonts/RobotoBold.eot');
+
+    src: url('../../../images/fonts/RobotoBold.eot') format('embedded-opentype'), url('../../../images/fonts/RobotoBold.woff2') format('woff2'), url('../../../images/fonts/RobotoBold.woff') format('woff'), url('../../../images/fonts/RobotoBold.ttf') format('truetype'), url('../../../images/fonts/RobotoBold.svg#RobotoBold') format('svg');
+
+}
+
+@font-face
+
+{
+
+    font-family: 'SVN-Shintia';
+
+    src: url('../../../images/fonts/SVN-ShintiaScript.eot');
+
+    src: url('../../../images/fonts/SVN-ShintiaScript.eot?#iefix') format('embedded-opentype'), url('../../../images/fonts/SVN-ShintiaScript.woff') format('woff'), url('../../../images/fonts/SVN-ShintiaScript.ttf') format('truetype'), url('../../../images/fonts/SVN-ShintiaScript.svg#SVN-ShintiaScript') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+@font-face
+{
+    font-family: 'fira-medium';
+
+    src: url('../../../images/fonts/fira/FiraSans-Medium.ttf') format('truetype');
+
+}
+@font-face
+{
+    font-family: 'fira-regular';
+
+    src: url('../../../images/fonts/fira/FiraSans-Regular.ttf') format('truetype');
+
+}
+
